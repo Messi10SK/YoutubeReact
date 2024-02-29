@@ -1,9 +1,11 @@
-
+//  agar red button pe click ho to backgrpound screen color bhi red 
+//  hojayega 
+// usestate  use kiya hai   
     import { useState } from "react"
 
 
     function App() {
-      const [color, setColor] = useState("olive")
+     const [color,setColor] = useState("white")
     
       return (
         <>
@@ -27,6 +29,26 @@
               className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
               style={{backgroundColor: "blue"}}
               >Blue</button>
+               
+               <button
+              onClick={() => setColor("olive")}
+              className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+              style={{backgroundColor: "olive"}}
+              >Olive</button>
+                 
+                 <button
+              onClick={() => setColor("gray")}
+              className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+              style={{backgroundColor: "gray"}}
+              >Gray</button>
+
+              <button
+              onClick={() => setColor("yellow")}
+              className="outline-none px-4 py-1 rounded-full text-Black shadow-lg"
+              style={{backgroundColor: "yellow"}}
+              >Yellow</button>
+
+
             </div>
           </div>
         </div>
