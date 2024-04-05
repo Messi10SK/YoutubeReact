@@ -13,3 +13,6 @@ function useCurrencyInfo(currency){
     return data;
 }
 export default useCurrencyInfo;
+
+// basic function which return js or jsx is also a hook 
+// 
